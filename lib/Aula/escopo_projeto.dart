@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   String nomeTimeA;
   String nomeTimeB;
@@ -22,7 +24,7 @@ void main() {
   maiorPontuador = 'Luis Azevedo';
   mvp = 'Luis Azevedo';
   periodoJogo = 4;
-
+  /*
   print('Time A: $nomeTimeA' +
       '\nTime B: $nomeTimeB' +
       '\nEm jogo : ${emJogo == true ? 'sim' : 'não'}' +
@@ -33,6 +35,23 @@ void main() {
       '\nMVP da Partida: $mvp' +
       '\nPeriodo do jogo: ${periodoJogo == 4 ? 'finalizado' : '$periodoJogo periodo'}' +
       '\nVencedor : ${pontosTimeA > pontosTimeB ? '$nomeTimeA' : '$nomeTimeB'}');
+    */
+
+  print('Digite o time A:');
+  var timeA = stdin.readLineSync();
+  print('Digite o time B:');
+  var timeB = stdin.readLineSync();
+
+  print('Quantidade de jogadores time A:');
+  var entradaJogadoresTimeA = stdin.readLineSync()!;
+  var jogadoresTimeA = int.parse(entradaJogadoresTimeA);
+
+  print('Quantidade de jogadores time B:');
+  var entradaJogadoresTimeB = stdin.readLineSync()!;
+  var jogadoresTimeB = int.parse(entradaJogadoresTimeB);
+
+  print('TIME A: $timeA');
+  print('jogadores A: $jogadoresTimeA');
+  print('TIME B: $timeB');
+  print('jogadores b: $jogadoresTimeB');
 }
-
-
