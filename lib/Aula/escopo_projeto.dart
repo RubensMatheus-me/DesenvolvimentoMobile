@@ -1,10 +1,11 @@
 import 'dart:io';
+import '../class/game.dart';
 
 void main() {
   String nomeTimeA;
   String nomeTimeB;
-  int jogadoresA;
-  int jogadoresB;
+  int jogadoresTimeA;
+  int jogadoresTimeB;
   bool emJogo;
   int pontosTimeA;
   int pontosTimeB;
@@ -15,8 +16,8 @@ void main() {
 
   nomeTimeA = 'Vencedores';
   nomeTimeB = 'Perdedores';
-  jogadoresA = 7;
-  jogadoresB = 10;
+  jogadoresTimeA = 7;
+  jogadoresTimeB = 10;
   emJogo = false;
   pontosTimeA = 120;
   pontosTimeB = 125;
@@ -24,52 +25,18 @@ void main() {
   maiorPontuador = 'Luis Azevedo';
   mvp = 'Luis Azevedo';
   periodoJogo = 4;
-  /*
-  print('Time A: $nomeTimeA' +
-      '\nTime B: $nomeTimeB' +
-      '\nEm jogo : ${emJogo == true ? 'sim' : 'não'}' +
-      '\nPontos do time A: $pontosTimeA' +
-      '\nPontos do time B: $pontosTimeB' +
-      '\nFaltas cometidas: $faltas' +
-      '\nMaior Pontuador da Partida: $maiorPontuador' +
-      '\nMVP da Partida: $mvp' +
-      '\nPeriodo do jogo: ${periodoJogo == 4 ? 'finalizado' : '$periodoJogo periodo'}' +
-      '\nVencedor : ${pontosTimeA > pontosTimeB ? '$nomeTimeA' : '$nomeTimeB'}');
 
+  TimeA timeA = new TimeA(
+      nomeTimeA: nomeTimeA,
+      pontosTimeA: pontosTimeA,
+      jogadoresTimeA: jogadoresTimeA);
+  TimeB timeB = new TimeB(
+      nomeTimeB: nomeTimeB,
+      pontosTimeB: pontosTimeB,
+      jogadoresTimeB: jogadoresTimeB);
 
-  print('Digite o time A:');
-  var timeA = stdin.readLineSync();
-  print('Digite o time B:');
-  var timeB = stdin.readLineSync();
-
-  print('Quantidade de jogadores time A:');
-  var entradaJogadoresTimeA = stdin.readLineSync()!;
-  var jogadoresTimeA = int.parse(entradaJogadoresTimeA);
-
-  print('Quantidade de jogadores time B:');
-  var entradaJogadoresTimeB = stdin.readLineSync()!;
-  var jogadoresTimeB = int.parse(entradaJogadoresTimeB);
-
-  print('TIME A: $timeA');
-  print('jogadores A: $jogadoresTimeA');
-  print('TIME B: $timeB');
-  print('jogadores b: $jogadoresTimeB');
-  */
-
-
-  
 }
 
-int maiorTimePontuador(int pontosTimeA, int pontosTimeB) {
-  int vencedor;
-  if (pontosTimeA > pontosTimeB) {
-    vencedor = pontosTimeA;
-  } else {
-    vencedor = pontosTimeB;
-  }
-  return vencedor;
-}
-
-int timeVitorioso({String timeA = '', String timeB = ''}) {
+void vencedor() {
   
 }
