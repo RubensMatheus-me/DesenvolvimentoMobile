@@ -35,7 +35,7 @@ void main() {
       '\nMVP da Partida: $mvp' +
       '\nPeriodo do jogo: ${periodoJogo == 4 ? 'finalizado' : '$periodoJogo periodo'}' +
       '\nVencedor : ${pontosTimeA > pontosTimeB ? '$nomeTimeA' : '$nomeTimeB'}');
-    */
+
 
   print('Digite o time A:');
   var timeA = stdin.readLineSync();
@@ -54,4 +54,22 @@ void main() {
   print('jogadores A: $jogadoresTimeA');
   print('TIME B: $timeB');
   print('jogadores b: $jogadoresTimeB');
+  */
+
+
+  
+}
+
+int maiorTimePontuador(int pontosTimeA, int pontosTimeB) {
+  int vencedor;
+  if (pontosTimeA > pontosTimeB) {
+    vencedor = pontosTimeA;
+  } else {
+    vencedor = pontosTimeB;
+  }
+  return vencedor;
+}
+
+int timeVitorioso({String timeA = '', String timeB = ''}) {
+  
 }
