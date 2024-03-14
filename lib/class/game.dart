@@ -3,7 +3,7 @@ class TimeA {
   int pontosTimeA;
   int jogadoresTimeA;
 
-  TimeA({required String this.nomeTimeA, int this.pontosTimeA = 0, required this.jogadoresTimeA});
+  TimeA({required this.nomeTimeA, this.pontosTimeA = 0, required this.jogadoresTimeA});
 }
 
 class TimeB {
@@ -11,7 +11,7 @@ class TimeB {
   int pontosTimeB;
   int jogadoresTimeB;
 
-  TimeB({required String this.nomeTimeB, int this.pontosTimeB = 0, required this.jogadoresTimeB});
+  TimeB({required this.nomeTimeB, this.pontosTimeB = 0, required this.jogadoresTimeB});
 }
 
 class Partida {
@@ -21,6 +21,5 @@ class Partida {
   String mvp;
   int periodoJogo;
 
-  Partida({this.faltas = 0, bool this.emJogo = false, String this.maiorPontuador = '', String this.mvp = '', int this.periodoJogo = 0});
-
+  Partida({this.faltas = 0, this.emJogo = false, this.maiorPontuador = '', this.mvp = '', this.periodoJogo = 0});
 }

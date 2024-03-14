@@ -25,18 +25,4 @@ void main() {
   maiorPontuador = 'Luis Azevedo';
   mvp = 'Luis Azevedo';
   periodoJogo = 4;
-
-  TimeA timeA = new TimeA(
-      nomeTimeA: nomeTimeA,
-      pontosTimeA: pontosTimeA,
-      jogadoresTimeA: jogadoresTimeA);
-  TimeB timeB = new TimeB(
-      nomeTimeB: nomeTimeB,
-      pontosTimeB: pontosTimeB,
-      jogadoresTimeB: jogadoresTimeB);
-
-}
-
-void vencedor() {
-  
 }
